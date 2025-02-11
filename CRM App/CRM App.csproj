@@ -7,4 +7,20 @@
     <RootNamespace>CRM_App</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="wwwroot\coreui-admin-template\**" />
+    <Content Remove="wwwroot\coreui-admin-template\**" />
+    <EmbeddedResource Remove="wwwroot\coreui-admin-template\**" />
+    <None Remove="wwwroot\coreui-admin-template\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\admin-template\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.3.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
+  </ItemGroup>
+
 </Project>
